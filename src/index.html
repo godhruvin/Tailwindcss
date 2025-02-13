@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taillwind </title>
-    <link rel="stylesheet" href="/src/output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind</title>
+  <link rel="stylesheet" href="/src/output.css" />
 </head>
-<body class="bg-gray-950 text-white w-full h-screen flex items-center justify-center">
-    <div class="text-3xl bg-red-950 rounded-lg w-60 h-32 text-center capitalize">
-        hello world 
-    </div>  
+
+<body>
+  <!-- navbar start -->
+  <div
+    class="relative flex flex-col sm:flex-row justify-between items-center 
+           p-2 w-full bg-gradient-to-b
+        from-black/50 to-transparent text-white z-10">
+    <!-- Logo Section -->
+    <div class="logo capitalize mb-4 sm:mb-0">
+      <img src="/images/—Pngtree—creative company_1420804.png" alt="Company Logo"
+        class="w-20 rounded-xl cursor-pointer ">
+    </div>
+
+    <!-- Menu Section -->
+    <div class="menus flex flex-col sm:flex-row justify-center sm:justify-end 
+    items-center gap-4 w-full sm:w-auto">
+      <a href="#"
+        class="cursor-pointer transition-all duration-300 transform hover:scale-110">Home</a>
+      <a href="#"
+        class="cursor-pointer transition-all duration-300 transform hover:scale-110">About</a>
+      <a href="#"
+        class="cursor-pointer transition-all duration-300 transform hover:scale-110">Services</a>
+      <a href="#"
+        class="cursor-pointer transition-all duration-300 transform hover:scale-110">Contact</a>
+      <button class="bg-blue-500 text-white rounded-md p-2 w-20 hover:bg-blue-700">Login</button>
+    </div>
+  </div>
+  <!-- navbar end -->
+
+  <!-- hero section start -->
+
+  <div class="hero-section m-9 mt-4 relative bg-cover bg-center h-[70vh] p-7 flex items-center justify-center rounded-lg overflow-hidden"
+  style="background-image: url('/images/adolfo-felix-PG8NyM_Mcts-unsplash.jpg');">
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  <!-- Content -->
+  <div class="hero-content text-center z-10 text-white p-4">
+    <h1 class="text-4xl sm:text-6xl font-bold mb-4">Welcome to Our Website</h1>
+    <p class="text-lg sm:text-xl mb-6">Delivering excellence and innovation for all your needs.</p>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all">
+      Get Started
+    </button>
+  </div>
+</div>
+
+  <!-- Hero Section End -->
 </body>
+
 </html>
